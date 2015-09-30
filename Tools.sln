@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinCrc16", "Crc16\WinCrc16.csproj", "{FF96F661-543E-481D-B6EC-FCD2B49C16F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinCrc16", "WinCrc16\WinCrc16.csproj", "{FF96F661-543E-481D-B6EC-FCD2B49C16F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
