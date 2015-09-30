@@ -91,6 +91,7 @@
             this.Controls.Add(this.textBoxResult);
             this.Controls.Add(this.textBoxInput);
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CRC16校验工具";
             this.ResumeLayout(false);
             this.PerformLayout();

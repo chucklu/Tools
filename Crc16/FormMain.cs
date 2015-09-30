@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Crc16
@@ -18,7 +12,10 @@ namespace Crc16
 
         private void buttonCrc16_Click(object sender, EventArgs e)
         {
-
+            //首先去除输入字符串中的空格
+            string input = textBoxInput.Text.Replace(" ", string.Empty);
+            string result = ChuckLu.Utility.Crc16.CheckHexSpaceString(input);
+            textBoxResult.Text = result;
         }
     }
 }
