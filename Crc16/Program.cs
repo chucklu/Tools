@@ -4,7 +4,7 @@ using System.Windows.Forms;
 using ChuckLu.Utility;
 using ZBM.ZITaker.Log;
 
-namespace Crc16
+namespace WinCrc16
 {
     static class Program
     {

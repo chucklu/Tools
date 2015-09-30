@@ -1,4 +1,4 @@
-﻿namespace Crc16
+﻿namespace WinCrc16
 {
     partial class FormMain
     {

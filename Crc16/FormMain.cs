@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Crc16
+namespace WinCrc16
 {
     public partial class FormMain : Form
     {

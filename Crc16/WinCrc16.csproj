@@ -7,8 +7,8 @@
     <ProjectGuid>{FF96F661-543E-481D-B6EC-FCD2B49C16F3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Crc16</RootNamespace>
-    <AssemblyName>Crc16</AssemblyName>
+    <RootNamespace>WinCrc16</RootNamespace>
+    <AssemblyName>WinCrc16</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
