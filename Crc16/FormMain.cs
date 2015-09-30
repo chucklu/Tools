@@ -15,5 +15,10 @@ namespace Crc16
         {
             InitializeComponent();
         }
+
+        private void buttonCrc16_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
