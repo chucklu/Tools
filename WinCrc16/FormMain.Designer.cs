@@ -76,7 +76,7 @@
             this.buttonCrc16.Name = "buttonCrc16";
             this.buttonCrc16.Size = new System.Drawing.Size(75, 23);
             this.buttonCrc16.TabIndex = 4;
-            this.buttonCrc16.Text = "CRC16";
+            this.buttonCrc16.Text = "校验";
             this.buttonCrc16.UseVisualStyleBackColor = true;
             this.buttonCrc16.Click += new System.EventHandler(this.buttonCrc16_Click);
             // 
@@ -92,7 +92,7 @@
             this.Controls.Add(this.textBoxInput);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CRC16校验工具";
+            this.Text = "CRC-16 (Modbus)";
             this.ResumeLayout(false);
             this.PerformLayout();
 
