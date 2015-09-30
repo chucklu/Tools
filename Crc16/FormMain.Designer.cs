@@ -40,6 +40,7 @@
             this.textBoxInput.Location = new System.Drawing.Point(56, 41);
             this.textBoxInput.Multiline = true;
             this.textBoxInput.Name = "textBoxInput";
+            this.textBoxInput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxInput.Size = new System.Drawing.Size(474, 302);
             this.textBoxInput.TabIndex = 0;
             // 
