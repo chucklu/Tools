@@ -1,7 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Threading;
 using System.Windows.Forms;
+using ChuckLu.Utility;
+using ZBM.ZITaker.Log;
 
 namespace UnixTime
 {
@@ -13,9 +14,19 @@ namespace UnixTime
         [STAThread]
         static void Main()
         {
+            Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
+            Application.ThreadException += Application_ThreadException;
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormMain());
+        }
+
+        static void Application_ThreadException(object sender, ThreadExceptionEventArgs e)
+        {
+            Exception exception = e.Exception;
+            ExceptionLog.Instance.WriteLog(exception, LogType.UI);
+            ChuckMessageBox.ShowError(exception);
         }
     }
 }

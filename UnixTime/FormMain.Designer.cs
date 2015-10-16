@@ -28,20 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox = new System.Windows.Forms.TextBox();
+            this.textBoxTimeToSeconds = new System.Windows.Forms.TextBox();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.buttonConfirm = new System.Windows.Forms.Button();
-            this.buttonClear = new System.Windows.Forms.Button();
+            this.buttonTimeToSeconds = new System.Windows.Forms.Button();
+            this.buttonClearSeconds = new System.Windows.Forms.Button();
+            this.textBoxSeconds = new System.Windows.Forms.TextBox();
+            this.buttonSecondsToTime = new System.Windows.Forms.Button();
+            this.textBoxSecondsToTime = new System.Windows.Forms.TextBox();
+            this.buttonClearTime = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox
+            // textBoxTimeToSeconds
             // 
-            this.textBox.Location = new System.Drawing.Point(25, 71);
-            this.textBox.Multiline = true;
-            this.textBox.Name = "textBox";
-            this.textBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox.Size = new System.Drawing.Size(424, 175);
-            this.textBox.TabIndex = 0;
+            this.textBoxTimeToSeconds.Location = new System.Drawing.Point(25, 71);
+            this.textBoxTimeToSeconds.Multiline = true;
+            this.textBoxTimeToSeconds.Name = "textBoxTimeToSeconds";
+            this.textBoxTimeToSeconds.ReadOnly = true;
+            this.textBoxTimeToSeconds.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxTimeToSeconds.Size = new System.Drawing.Size(424, 115);
+            this.textBoxTimeToSeconds.TabIndex = 0;
             // 
             // dateTimePicker
             // 
@@ -52,35 +57,75 @@
             this.dateTimePicker.Size = new System.Drawing.Size(200, 21);
             this.dateTimePicker.TabIndex = 1;
             // 
-            // buttonConfirm
+            // buttonTimeToSeconds
             // 
-            this.buttonConfirm.Location = new System.Drawing.Point(259, 25);
-            this.buttonConfirm.Name = "buttonConfirm";
-            this.buttonConfirm.Size = new System.Drawing.Size(75, 23);
-            this.buttonConfirm.TabIndex = 2;
-            this.buttonConfirm.Text = "确定";
-            this.buttonConfirm.UseVisualStyleBackColor = true;
-            this.buttonConfirm.Click += new System.EventHandler(this.button1_Click);
+            this.buttonTimeToSeconds.Location = new System.Drawing.Point(259, 25);
+            this.buttonTimeToSeconds.Name = "buttonTimeToSeconds";
+            this.buttonTimeToSeconds.Size = new System.Drawing.Size(75, 23);
+            this.buttonTimeToSeconds.TabIndex = 2;
+            this.buttonTimeToSeconds.Text = "确定";
+            this.buttonTimeToSeconds.UseVisualStyleBackColor = true;
+            this.buttonTimeToSeconds.Click += new System.EventHandler(this.buttonTimeToSeconds_Click);
             // 
-            // buttonClear
+            // buttonClearSeconds
             // 
-            this.buttonClear.Location = new System.Drawing.Point(374, 24);
-            this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(75, 23);
-            this.buttonClear.TabIndex = 3;
-            this.buttonClear.Text = "清屏";
-            this.buttonClear.UseVisualStyleBackColor = true;
-            this.buttonClear.Click += new System.EventHandler(this.button2_Click);
+            this.buttonClearSeconds.Location = new System.Drawing.Point(374, 24);
+            this.buttonClearSeconds.Name = "buttonClearSeconds";
+            this.buttonClearSeconds.Size = new System.Drawing.Size(75, 23);
+            this.buttonClearSeconds.TabIndex = 3;
+            this.buttonClearSeconds.Text = "清屏";
+            this.buttonClearSeconds.UseVisualStyleBackColor = true;
+            this.buttonClearSeconds.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBoxSeconds
+            // 
+            this.textBoxSeconds.Location = new System.Drawing.Point(25, 222);
+            this.textBoxSeconds.Name = "textBoxSeconds";
+            this.textBoxSeconds.Size = new System.Drawing.Size(200, 21);
+            this.textBoxSeconds.TabIndex = 4;
+            // 
+            // buttonSecondsToTime
+            // 
+            this.buttonSecondsToTime.Location = new System.Drawing.Point(248, 222);
+            this.buttonSecondsToTime.Name = "buttonSecondsToTime";
+            this.buttonSecondsToTime.Size = new System.Drawing.Size(75, 23);
+            this.buttonSecondsToTime.TabIndex = 5;
+            this.buttonSecondsToTime.Text = "确定";
+            this.buttonSecondsToTime.UseVisualStyleBackColor = true;
+            this.buttonSecondsToTime.Click += new System.EventHandler(this.buttonSecondsToTime_Click);
+            // 
+            // textBoxSecondsToTime
+            // 
+            this.textBoxSecondsToTime.Location = new System.Drawing.Point(25, 264);
+            this.textBoxSecondsToTime.Multiline = true;
+            this.textBoxSecondsToTime.Name = "textBoxSecondsToTime";
+            this.textBoxSecondsToTime.ReadOnly = true;
+            this.textBoxSecondsToTime.Size = new System.Drawing.Size(424, 115);
+            this.textBoxSecondsToTime.TabIndex = 6;
+            // 
+            // buttonClearTime
+            // 
+            this.buttonClearTime.Location = new System.Drawing.Point(374, 222);
+            this.buttonClearTime.Name = "buttonClearTime";
+            this.buttonClearTime.Size = new System.Drawing.Size(75, 23);
+            this.buttonClearTime.TabIndex = 7;
+            this.buttonClearTime.Text = "清屏";
+            this.buttonClearTime.UseVisualStyleBackColor = true;
+            this.buttonClearTime.Click += new System.EventHandler(this.buttonClearTime_Click);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(502, 293);
-            this.Controls.Add(this.buttonClear);
-            this.Controls.Add(this.buttonConfirm);
+            this.ClientSize = new System.Drawing.Size(502, 393);
+            this.Controls.Add(this.buttonClearTime);
+            this.Controls.Add(this.textBoxSecondsToTime);
+            this.Controls.Add(this.buttonSecondsToTime);
+            this.Controls.Add(this.textBoxSeconds);
+            this.Controls.Add(this.buttonClearSeconds);
+            this.Controls.Add(this.buttonTimeToSeconds);
             this.Controls.Add(this.dateTimePicker);
-            this.Controls.Add(this.textBox);
+            this.Controls.Add(this.textBoxTimeToSeconds);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Unix时间戳转换";
@@ -92,10 +137,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox;
+        private System.Windows.Forms.TextBox textBoxTimeToSeconds;
         private System.Windows.Forms.DateTimePicker dateTimePicker;
-        private System.Windows.Forms.Button buttonConfirm;
-        private System.Windows.Forms.Button buttonClear;
+        private System.Windows.Forms.Button buttonTimeToSeconds;
+        private System.Windows.Forms.Button buttonClearSeconds;
+        private System.Windows.Forms.TextBox textBoxSeconds;
+        private System.Windows.Forms.Button buttonSecondsToTime;
+        private System.Windows.Forms.TextBox textBoxSecondsToTime;
+        private System.Windows.Forms.Button buttonClearTime;
     }
 }
 
