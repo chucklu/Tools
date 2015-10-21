@@ -185,9 +185,12 @@
             // 
             // 属性栏ToolStripMenuItem
             // 
+            this.属性栏ToolStripMenuItem.Checked = true;
+            this.属性栏ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.属性栏ToolStripMenuItem.Name = "属性栏ToolStripMenuItem";
-            this.属性栏ToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.属性栏ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.属性栏ToolStripMenuItem.Text = "属性栏";
+            this.属性栏ToolStripMenuItem.Click += new System.EventHandler(this.属性栏ToolStripMenuItem_Click);
             // 
             // 帮助ToolStripMenuItem
             // 
@@ -330,7 +333,7 @@
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // Form1
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -338,10 +341,12 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Socket工具";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
