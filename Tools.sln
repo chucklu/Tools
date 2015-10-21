@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnixTime", "UnixTime\UnixTi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainTicket", "TrainTicket\TrainTicket.csproj", "{84C217FC-F9F1-436C-8D9D-6F851E26965D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketTool", "SocketTool\SocketTool.csproj", "{CA7A027E-32D6-4A26-85F2-323E17B98188}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{84C217FC-F9F1-436C-8D9D-6F851E26965D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84C217FC-F9F1-436C-8D9D-6F851E26965D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84C217FC-F9F1-436C-8D9D-6F851E26965D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA7A027E-32D6-4A26-85F2-323E17B98188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA7A027E-32D6-4A26-85F2-323E17B98188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA7A027E-32D6-4A26-85F2-323E17B98188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA7A027E-32D6-4A26-85F2-323E17B98188}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
