@@ -43,6 +43,7 @@
             this.textBoxInput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxInput.Size = new System.Drawing.Size(474, 302);
             this.textBoxInput.TabIndex = 0;
+            this.textBoxInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxInput_KeyDown);
             // 
             // textBoxResult
             // 
