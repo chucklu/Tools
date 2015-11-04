@@ -16,8 +16,7 @@ namespace UnixTime
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            GetBasicTimeFromSetting();
-            dateTimePickerBasic.Value = dateTimeBasic;
+            dateTimePickerBasic.Value = Settings.Default.UnixTime;
         }
 
         /// <summary>
@@ -48,9 +47,14 @@ namespace UnixTime
         {
             AppendBasicTime();
             string sec = textBoxSeconds.Text.Trim();
+            if (string.IsNullOrEmpty(sec))
+            {
+                throw new Exception("输入的秒数不允许为空");
+            }
             long seconds;
             if (sec.StartsWith("0x") || sec.StartsWith("0X"))
             {
+                sec = sec.Replace(" ", string.Empty);
                 seconds = Convert.ToInt64(sec, 16);
             }
             else
