@@ -56,6 +56,12 @@
     <Compile Include="FormHMACSHA256.Designer.cs">
       <DependentUpon>FormHMACSHA256.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormWinCrc16.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormHMACSHA256.resx">
       <DependentUpon>FormHMACSHA256.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormWinCrc16.resx">
       <DependentUpon>FormWinCrc16.cs</DependentUpon>

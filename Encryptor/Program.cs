@@ -19,7 +19,7 @@ namespace Encryptor
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormWinCrc16());
+            Application.Run(new FormMain());
         }
 
         static void Application_ThreadException(object sender, ThreadExceptionEventArgs e)
