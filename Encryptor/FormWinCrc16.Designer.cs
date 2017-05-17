@@ -1,6 +1,6 @@
 ﻿namespace Encryptor
 {
-    partial class FormMain
+    partial class FormWinCrc16
     {
         /// <summary>
         /// 必需的设计器变量。

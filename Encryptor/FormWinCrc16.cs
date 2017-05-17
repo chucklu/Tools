@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace Encryptor
 {
-    public partial class FormMain : Form
+    public partial class FormWinCrc16 : Form
     {
-        public FormMain()
+        public FormWinCrc16()
         {
             InitializeComponent();
         }
