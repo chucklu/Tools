@@ -144,7 +144,7 @@
             this.Controls.Add(this.groupBoxInput);
             this.Name = "FormHMACSHA256";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "FormHMACSHA256";
+            this.Text = "HMACSHA256";
             this.groupBoxInput.ResumeLayout(false);
             this.groupBoxInput.PerformLayout();
             this.groupBoxSecretKey.ResumeLayout(false);

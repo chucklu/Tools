@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Data;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -26,7 +25,7 @@ namespace Encryptor
             var result = encryptor.ComputeHash(content);
 
             string hex = string.Join(string.Empty, result.Select(x => x.ToString("x2")));
-            string show = $"【{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")}】{Environment.NewLine}Input:{toEncrypt}{Environment.NewLine}Security Key:{secretKey}{Environment.NewLine}Result: {hex}{Environment.NewLine}{Environment.NewLine}";
+            string show = $"【{DateTime.Now:yyyy-MM-dd HH:mm:ss.fff}】{Environment.NewLine}Input:{toEncrypt}{Environment.NewLine}Security Key:{secretKey}{Environment.NewLine}Result: {hex}{Environment.NewLine}{Environment.NewLine}";
             textBoxResult.AppendText(show);
         }
 
