@@ -1,4 +1,4 @@
-﻿namespace WinCrc16
+﻿namespace Encryptor
 {
     partial class FormHMACSHA256
     {
@@ -28,40 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBoxToEncrypt = new System.Windows.Forms.TextBox();
-            this.groupBoxToEncrypt = new System.Windows.Forms.GroupBox();
+            this.textBoxInput = new System.Windows.Forms.TextBox();
+            this.groupBoxInput = new System.Windows.Forms.GroupBox();
+            this.splitter1 = new System.Windows.Forms.Splitter();
             this.groupBoxSecretKey = new System.Windows.Forms.GroupBox();
             this.textBoxSecretKey = new System.Windows.Forms.TextBox();
             this.groupBoxResult = new System.Windows.Forms.GroupBox();
             this.textBoxResult = new System.Windows.Forms.TextBox();
             this.buttonCompute = new System.Windows.Forms.Button();
-            this.splitter1 = new System.Windows.Forms.Splitter();
             this.buttonClear = new System.Windows.Forms.Button();
-            this.groupBoxToEncrypt.SuspendLayout();
+            this.groupBoxInput.SuspendLayout();
             this.groupBoxSecretKey.SuspendLayout();
             this.groupBoxResult.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBoxToEncrypt
+            // textBoxInput
             // 
-            this.textBoxToEncrypt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxToEncrypt.Location = new System.Drawing.Point(3, 16);
-            this.textBoxToEncrypt.Multiline = true;
-            this.textBoxToEncrypt.Name = "textBoxToEncrypt";
-            this.textBoxToEncrypt.Size = new System.Drawing.Size(878, 156);
-            this.textBoxToEncrypt.TabIndex = 0;
+            this.textBoxInput.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxInput.Location = new System.Drawing.Point(3, 16);
+            this.textBoxInput.Multiline = true;
+            this.textBoxInput.Name = "textBoxInput";
+            this.textBoxInput.Size = new System.Drawing.Size(878, 156);
+            this.textBoxInput.TabIndex = 0;
             // 
-            // groupBoxToEncrypt
+            // groupBoxInput
             // 
-            this.groupBoxToEncrypt.Controls.Add(this.splitter1);
-            this.groupBoxToEncrypt.Controls.Add(this.textBoxToEncrypt);
-            this.groupBoxToEncrypt.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBoxToEncrypt.Location = new System.Drawing.Point(0, 0);
-            this.groupBoxToEncrypt.Name = "groupBoxToEncrypt";
-            this.groupBoxToEncrypt.Size = new System.Drawing.Size(884, 175);
-            this.groupBoxToEncrypt.TabIndex = 1;
-            this.groupBoxToEncrypt.TabStop = false;
-            this.groupBoxToEncrypt.Text = "ContentToEncrypt";
+            this.groupBoxInput.Controls.Add(this.splitter1);
+            this.groupBoxInput.Controls.Add(this.textBoxInput);
+            this.groupBoxInput.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBoxInput.Location = new System.Drawing.Point(0, 0);
+            this.groupBoxInput.Name = "groupBoxInput";
+            this.groupBoxInput.Size = new System.Drawing.Size(884, 175);
+            this.groupBoxInput.TabIndex = 1;
+            this.groupBoxInput.TabStop = false;
+            this.groupBoxInput.Text = "Input";
+            // 
+            // splitter1
+            // 
+            this.splitter1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.splitter1.Location = new System.Drawing.Point(3, 169);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(878, 3);
+            this.splitter1.TabIndex = 1;
+            this.splitter1.TabStop = false;
             // 
             // groupBoxSecretKey
             // 
@@ -113,15 +122,6 @@
             this.buttonCompute.UseVisualStyleBackColor = true;
             this.buttonCompute.Click += new System.EventHandler(this.buttonCompute_Click);
             // 
-            // splitter1
-            // 
-            this.splitter1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter1.Location = new System.Drawing.Point(3, 169);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(878, 3);
-            this.splitter1.TabIndex = 1;
-            this.splitter1.TabStop = false;
-            // 
             // buttonClear
             // 
             this.buttonClear.Location = new System.Drawing.Point(548, 222);
@@ -141,12 +141,12 @@
             this.Controls.Add(this.buttonCompute);
             this.Controls.Add(this.groupBoxResult);
             this.Controls.Add(this.groupBoxSecretKey);
-            this.Controls.Add(this.groupBoxToEncrypt);
+            this.Controls.Add(this.groupBoxInput);
             this.Name = "FormHMACSHA256";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormHMACSHA256";
-            this.groupBoxToEncrypt.ResumeLayout(false);
-            this.groupBoxToEncrypt.PerformLayout();
+            this.groupBoxInput.ResumeLayout(false);
+            this.groupBoxInput.PerformLayout();
             this.groupBoxSecretKey.ResumeLayout(false);
             this.groupBoxSecretKey.PerformLayout();
             this.groupBoxResult.ResumeLayout(false);
@@ -157,8 +157,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBoxToEncrypt;
-        private System.Windows.Forms.GroupBox groupBoxToEncrypt;
+        private System.Windows.Forms.TextBox textBoxInput;
+        private System.Windows.Forms.GroupBox groupBoxInput;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.GroupBox groupBoxSecretKey;
         private System.Windows.Forms.TextBox textBoxSecretKey;

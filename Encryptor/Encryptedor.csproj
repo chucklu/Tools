@@ -7,8 +7,8 @@
     <ProjectGuid>{FF96F661-543E-481D-B6EC-FCD2B49C16F3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WinCrc16</RootNamespace>
-    <AssemblyName>WinCrc16</AssemblyName>
+    <RootNamespace>Encryptor</RootNamespace>
+    <AssemblyName>Encryptor</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -78,6 +78,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

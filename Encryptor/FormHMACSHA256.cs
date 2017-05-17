@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
 
-namespace WinCrc16
+namespace Encryptor
 {
     public partial class FormHMACSHA256 : Form
     {
@@ -16,7 +16,7 @@ namespace WinCrc16
 
         private void buttonCompute_Click(object sender, EventArgs e)
         {
-            string toEncrypt = textBoxToEncrypt.Text;
+            string toEncrypt = textBoxInput.Text;
             string secretKey = textBoxSecretKey.Text;
 
             byte[] key = Encoding.ASCII.GetBytes(secretKey);

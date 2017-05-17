@@ -1,4 +1,4 @@
-﻿namespace WinCrc16
+﻿namespace Encryptor
 {
     partial class FormMain
     {

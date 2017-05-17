@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace WinCrc16
+namespace Encryptor
 {
     public partial class FormMain : Form
     {

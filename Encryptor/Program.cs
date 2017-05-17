@@ -4,7 +4,7 @@ using System.Windows.Forms;
 using ChuckLu.Utility;
 using ZBM.ZITaker.Log;
 
-namespace WinCrc16
+namespace Encryptor
 {
     static class Program
     {
