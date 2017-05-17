@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainTicket", "TrainTicket\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketTool", "SocketTool\SocketTool.csproj", "{CA7A027E-32D6-4A26-85F2-323E17B98188}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryptedor", "Encryptor\Encryptedor.csproj", "{FF96F661-543E-481D-B6EC-FCD2B49C16F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryptor", "Encryptor\Encryptor.csproj", "{FF96F661-543E-481D-B6EC-FCD2B49C16F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
