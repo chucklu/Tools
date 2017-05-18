@@ -5,7 +5,7 @@ using ChuckLu.Utility;
 
 namespace Encryptor
 {
-    public partial class FormWinCrc16 : Form
+    public partial class FormWinCrc16 : Form, IOrder
     {
         public FormWinCrc16()
         {
@@ -27,7 +27,7 @@ namespace Encryptor
 
             //首先去除输入字符串中的空格
             input = input.Replace(" ", string.Empty);
-            string result = ChuckLu.Utility.Crc16.CheckHexSpaceString(input);
+            string result = Crc16.CheckHexSpaceString(input);
             textBoxResult.Text = result;
         }
 
@@ -40,5 +40,7 @@ namespace Encryptor
                 e.Handled = true;
             }
         }
+
+        public int Order { get; } = 1;
     }
 }

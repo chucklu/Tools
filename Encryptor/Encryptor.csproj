@@ -50,6 +50,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IOrder.cs" />
     <Compile Include="FormHMACSHA256.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace Encryptor
 {
-    public partial class FormHMACSHA256 : Form
+    public partial class FormHMACSHA256 : Form, IOrder
     {
         public FormHMACSHA256()
         {
@@ -33,5 +33,7 @@ namespace Encryptor
         {
             textBoxResult.Clear();
         }
+
+        public int Order { get; } = 0;
     }
 }
