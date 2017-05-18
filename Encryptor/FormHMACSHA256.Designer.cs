@@ -93,8 +93,10 @@
             // 
             // groupBoxResult
             // 
+            this.groupBoxResult.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxResult.Controls.Add(this.textBoxResult);
-            this.groupBoxResult.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBoxResult.Location = new System.Drawing.Point(0, 263);
             this.groupBoxResult.Name = "groupBoxResult";
             this.groupBoxResult.Size = new System.Drawing.Size(884, 299);
