@@ -35,5 +35,14 @@ namespace Encryptor
         }
 
         public int Order { get; } = 0;
+
+        private void textBoxInput_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && (e.KeyCode == Keys.A))
+            {
+                ((TextBox) sender)?.SelectAll();
+                e.Handled = true;
+            }
+        }
     }
 }

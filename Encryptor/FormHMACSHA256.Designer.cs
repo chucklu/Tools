@@ -48,8 +48,10 @@
             this.textBoxInput.Location = new System.Drawing.Point(3, 16);
             this.textBoxInput.Multiline = true;
             this.textBoxInput.Name = "textBoxInput";
+            this.textBoxInput.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBoxInput.Size = new System.Drawing.Size(878, 156);
             this.textBoxInput.TabIndex = 0;
+            this.textBoxInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxInput_KeyDown);
             // 
             // groupBoxInput
             // 
@@ -111,6 +113,7 @@
             this.textBoxResult.Multiline = true;
             this.textBoxResult.Name = "textBoxResult";
             this.textBoxResult.ReadOnly = true;
+            this.textBoxResult.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBoxResult.Size = new System.Drawing.Size(878, 280);
             this.textBoxResult.TabIndex = 0;
             // 
