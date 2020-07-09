@@ -12,10 +12,11 @@ namespace ProcessInvoker
             {
                 var processFileName= ConfigurationManager.AppSettings[AppSettingKeys.ProcessFileName];
                 var processCountStr = ConfigurationManager.AppSettings[AppSettingKeys.ProcessCount];
+                var arguments = ConfigurationManager.AppSettings[AppSettingKeys.Arguments];
                 var processCount = Convert.ToInt32(processCountStr);
                 for (int i = 0; i < processCount; i++)
                 {
-                    ProcessHelper.Start(processFileName);
+                    ProcessHelper.Start(processFileName, arguments);
                 }
             }
             catch (Exception ex)
@@ -31,13 +32,15 @@ namespace ProcessInvoker
 
     class ProcessHelper
     {
-        public static void Start(string fileName)
+        public static void Start(string fileName, string arguments)
         {
-            ProcessStartInfo processStartInfo = new ProcessStartInfo();
-            processStartInfo.CreateNoWindow = true;
-            processStartInfo.UseShellExecute = false;
-            processStartInfo.FileName = fileName;
-            processStartInfo.Arguments = "2 8";
+            var processStartInfo = new ProcessStartInfo
+            {
+                CreateNoWindow = true,
+                UseShellExecute = false, 
+                FileName = fileName,
+                Arguments = arguments//The default is an empty string ("").
+            };
             var process = Process.Start(processStartInfo);
             if (process == null)
             {
@@ -47,7 +50,8 @@ namespace ProcessInvoker
             {
                 if (process.HasExited)
                 {
-                    Console.WriteLine($"process.HasExited = {process.HasExited}, process.ExitCode = {process.ExitCode}");
+                    Console.WriteLine(
+                        $"process.HasExited = {process.HasExited}, process.ExitCode = {process.ExitCode}");
                 }
                 else
                 {
@@ -62,5 +66,7 @@ namespace ProcessInvoker
         public const string ProcessFileName = "ProcessFileName";
 
         public const string ProcessCount = "ProcessCount";
+
+        public const string Arguments = "Arguments";
     }
 }
