@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnixTime", "UnixTime\UnixTime.csproj", "{FFCC6B1F-CA76-4B2E-A472-67850CA526EA}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketTool", "SocketTool\SocketTool.csproj", "{CA7A027E-32D6-4A26-85F2-323E17B98188}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryptor", "Encryptor\Encryptor.csproj", "{FF96F661-543E-481D-B6EC-FCD2B49C16F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessInvoker", "ProcessInvoker\ProcessInvoker.csproj", "{B2A70ABB-D729-48C9-AF51-C526843407DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,8 +35,15 @@ Global
 		{FF96F661-543E-481D-B6EC-FCD2B49C16F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF96F661-543E-481D-B6EC-FCD2B49C16F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF96F661-543E-481D-B6EC-FCD2B49C16F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2A70ABB-D729-48C9-AF51-C526843407DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A70ABB-D729-48C9-AF51-C526843407DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A70ABB-D729-48C9-AF51-C526843407DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A70ABB-D729-48C9-AF51-C526843407DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF7FE97A-7B62-470B-86CE-4BABF01E7E13}
 	EndGlobalSection
 EndGlobal
